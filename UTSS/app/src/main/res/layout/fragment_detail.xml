@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="163dp"
+                android:layout_marginTop="340dp"
+                android:layout_marginEnd="163dp"
+                android:text="@string/rindu"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="296dp"
+                android:layout_height="207dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="412dp"
+                android:layout_marginEnd="57dp"
+                android:text="@string/apalah_arti_memiliki_ketika_diri_kami_sendiri_bukanlah_milik_kami_apalah_arti_kehilangan_ketika_kami_sebenarnya_menemukan_banyak_saat_kehilangan_dan_sebaliknya_kehilangan_banyak_pula_saat_menemukan_apalah_arti_cinta_ketika_kami_menangis_terluka_atas_perasaan_yang_seharusnya_indah_bagaimana_mungkin_kami_terduduk_patah_hati_atas_sesuatu_yang_seharusnya_suci_dan_tidak_menuntut_apa_pun_wahai_bukankah_banyak_kerinduan_saat_kami_hendak_melupakan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="632dp"
+                android:layout_marginEnd="167dp"
+                android:text="@string/pinjam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="223dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="94dp"
+                android:src="@drawable/_3c11d98617bc_20230113160008_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
