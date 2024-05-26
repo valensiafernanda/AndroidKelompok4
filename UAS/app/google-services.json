@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486771136375",
+    "project_id": "ujianakhir-ad9fb",
+    "storage_bucket": "ujianakhir-ad9fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486771136375:android:ac2acfe8d6fd429c5e7372",
+        "android_client_info": {
+          "package_name": "com.pemrogandroid.uas_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkhbV_LrwHbC6EVkg4rylls7jVNME-dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
