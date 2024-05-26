@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">UAS_</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="belum_punya_akun_daftar">Belum punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="enter_email">Enter email</string>
+    <string name="full_name">Full name</string>
+    <string name="daftar2">Daftar</string>
+    <string name="rindu">Rindu</string>
+    <string name="apalah_arti_memiliki_ketika_diri_kami_sendiri_bukanlah_milik_kami_apalah_arti_kehilangan_ketika_kami_sebenarnya_menemukan_banyak_saat_kehilangan_dan_sebaliknya_kehilangan_banyak_pula_saat_menemukan_apalah_arti_cinta_ketika_kami_menangis_terluka_atas_perasaan_yang_seharusnya_indah_bagaimana_mungkin_kami_terduduk_patah_hati_atas_sesuatu_yang_seharusnya_suci_dan_tidak_menuntut_apa_pun_wahai_bukankah_banyak_kerinduan_saat_kami_hendak_melupakan">Apalah arti memiliki? Ketika diri kami sendiri bukanlah milik kami. Apalah arti kehilangan, Ketika kami sebenarnya menemukan banyak saat kehilangan, dan sebaliknya, kehilangan banyak pula saat menemukan? Apalah arti cinta, Ketika kami menangis terluka atas perasaan yang seharusnya indah? Bagaimana mungkin, kami terduduk patah hati atas sesuatu yang seharusnya suci dan tidak menuntut apa pun? Wahai, bukankah banyak kerinduan saat kami hendak melupakan?</string>
+    <string name="pinjam">Pinjam</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="password2">Password</string>
+    <string name="enter_email2">Enter email</string>
+    <string name="full_name2">Full name</string>
+    <string name="password3">Password</string>
+    <string name="email2">Email</string>
+    <string name="full_name3">Full name</string>
+    <string name="ensiklopedia_tanya_jawab">Ensiklopedia Tanya Jawab</string>
+    <string name="daftar_buku_terkait">Daftar buku terkait</string>
+    <string name="hasil_penelusuran_terkait">Hasil penelusuran terkait</string>
+    <string name="ensiklopedia_fauna_dunia">Ensiklopedia Fauna Dunia</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password4">Password</string>
+    <string name="enter_email3">Enter email</string>
+    <string name="belum_punya_akun_daftar2">Belum punya akun? </string>
+    <string name="hallo_welcome">Hallo, welcome!</string>
+    <string name="log_out">Log out</string>
+    <string name="privacy">Privacy</string>
+    <string name="kyungsoo_gmail_com">kyungsoo@gmail.com</string>
+    <string name="kyungsoo">Kyungsoo</string>
+    <string name="masukkan_nama_buku">Masukkan nama buku</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="search3">Search</string>
+    <string name="detail">Detail</string>
+    <string name="profil">Profil</string>
+    <string name="daftar_buku">daftar Buku</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar12">Daftar</string>
+    <string name="welcome">Welcome</string>
+    <string name="masuk_2">Masuk</string>
+    <string name="masuk_3">Masuk</string>
+    <string name="logodaftar">Daftar</string>
+    <string name="informasilogin">Silahkan isi informasi berikut</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="logodescription">logodescription</string>
+    <string name="logo_description">logo\n</string>
+    <string name="halamandaftar">Daftar</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
