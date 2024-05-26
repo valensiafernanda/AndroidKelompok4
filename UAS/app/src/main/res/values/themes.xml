@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
 
 
 
@@ -23,3 +24,7 @@
     </style>
 
     </resources>
+=======
+    <style name="Theme.UAS_" parent="Base.Theme.UAS_" />
+</resources>
+>>>>>>> 8700012d39cdd82e02df8d0cb8ecf46d9c54450d
