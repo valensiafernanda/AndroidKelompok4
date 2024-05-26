@@ -41,7 +41,6 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
@@ -49,10 +48,6 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.71828")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
-=======
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
->>>>>>> 8700012d39cdd82e02df8d0cb8ecf46d9c54450d
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("androidx.core:core-ktx:1.13.1")

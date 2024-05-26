@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -31,22 +30,3 @@
         tools:listitem="@layout/item_book"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-<<<<<<<< HEAD:UAS/app/src/main/res/layout/fragment_forgot_password.xml
-    tools:context=".fragment.ForgotPasswordFragment">
-========
-    tools:context=".fragment.HomeFragment">
->>>>>>>> 8700012d39cdd82e02df8d0cb8ecf46d9c54450d:UAS/app/src/main/res/layout/fragment_home.xml
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
->>>>>>> 8700012d39cdd82e02df8d0cb8ecf46d9c54450d

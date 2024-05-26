@@ -1,11 +1,7 @@
 <resources>
     <string name="app_name">UAS_</string>
 
-<<<<<<< HEAD
     <string name="nama_film1">Judul Buku</string>
-=======
-
->>>>>>> 8700012d39cdd82e02df8d0cb8ecf46d9c54450d
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="belum_punya_akun_daftar">Belum punya akun?</string>
     <string name="daftar">Daftar</string>
