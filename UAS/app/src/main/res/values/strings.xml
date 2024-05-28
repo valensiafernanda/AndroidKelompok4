@@ -71,4 +71,13 @@
     <string name="author_">Steve Martin</string>
     <string name="back_button_description">back_button</string>
     <string name="result">Result</string>
+    <string name="savebtn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="iconuser">iconuser_</string>
+    <string name="namaprofil">Veronica</string>
+    <string name="privacy_">Privacy</string>
+    <string name="log_out_">Log out</string>
+    <string name="emailprofile">veronica12@gmail.com</string>
+    <string name="icnuser_">icnuser_</string>
+    <string name="icnlogout">icnlogout</string>
 </resources>
