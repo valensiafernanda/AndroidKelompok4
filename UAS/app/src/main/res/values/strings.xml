@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">UAS_</string>
+<<<<<<< HEAD
     <string name="pinjam_">PINJAM</string>
     <string name="gambar_11">gambar</string>
     <string name="author_">Steve Martin</string>
+=======
+
+>>>>>>> 22bffd882a89048a4ebeca760d2104e6638c7b3a
     <string name="nama_film1">Judul Buku</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="belum_punya_akun_daftar">Belum punya akun?</string>

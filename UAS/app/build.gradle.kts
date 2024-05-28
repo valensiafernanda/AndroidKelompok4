@@ -41,9 +41,12 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0'")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+=======
+>>>>>>> 22bffd882a89048a4ebeca760d2104e6638c7b3a
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
