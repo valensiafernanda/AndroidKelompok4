@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluesky">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:contentDescription="@string/btn_back"
+        android:src="@drawable/backicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="295dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="153dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:transitionName="BookTrans"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="153dp"
+                    android:layout_height="214dp"
+                    android:contentDescription="@string/gambar_11"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/rindu" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Description text -->
+
+    <TextView
+        android:id="@+id/judulBuku_"
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/judul_buku_"
+        android:textColor="#050505"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/author_"
+        android:layout_width="359dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/author_"
+        android:textColor="#050505"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/judulBuku_" />
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toTopOf="@id/pinjambtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author_"
+        app:layout_constraintVertical_bias="0.296">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/description"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pinjambtn"
+        android:layout_width="356dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#6E8EB7"
+        android:text="@string/pinjam_"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

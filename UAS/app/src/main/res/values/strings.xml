@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">UAS_</string>
-
-
+    <string name="pinjam_">PINJAM</string>
+    <string name="gambar_11">gambar</string>
+    <string name="author_">Steve Martin</string>
+    <string name="nama_film1">Judul Buku</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="belum_punya_akun_daftar">Belum punya akun?</string>
     <string name="daftar">Daftar</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="password">Password</string>
     <string name="enter_email">Enter email</string>
+    <string name="btn_back">btn_back</string>
     <string name="full_name">Full name</string>
     <string name="daftar2">Daftar</string>
     <string name="rindu">Rindu</string>
@@ -37,6 +40,10 @@
     <string name="masukkan_nama_buku">Masukkan nama buku</string>
     <string name="search">Search</string>
     <string name="home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="profil_">Profile</string>
+    <string name="listbuku_">List Buku</string>
+    <string name="search_">Search</string>
     <string name="search3">Search</string>
     <string name="detail">Detail</string>
     <string name="profil">Profil</string>
@@ -54,6 +61,7 @@
     <string name="logo_description">logo\n</string>
     <string name="halamandaftar">Daftar</string>
     <string name="todo">TODO</string>
-
+    <string name="description">The definitive, bestselling account of the company that changed the way we work and live, updated for the twentieth anniversary of Google’s founding with analysis of its most recent bold moves to redefine the world—and its even more ambitious plans for the future.</string>
+    <string name="judul_buku_">Judul Buku</string>
 
 </resources>
