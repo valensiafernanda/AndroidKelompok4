@@ -28,6 +28,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity android:name=".DetailActivity" />
+        <activity android:name=".SearchResultActivity" />
     </application>
 
 </manifest>

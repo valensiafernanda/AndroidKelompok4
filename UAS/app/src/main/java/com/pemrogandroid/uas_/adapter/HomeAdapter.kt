@@ -5,23 +5,15 @@ package com.pemrogandroid.uas_.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-<<<<<<< HEAD
 import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.pemrogandroid.uas_.Interfac.OnItemClickListener
-=======
-
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
->>>>>>> 22bffd882a89048a4ebeca760d2104e6638c7b3a
 import com.pemrogandroid.uas_.R
 import com.pemrogandroid.uas_.model.BookItem
 import com.squareup.picasso.Picasso
 
-<<<<<<< HEAD
 class HomeAdapter(private var books: List<BookItem>, private val itemClickListener: OnItemClickListener):  RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener{
@@ -41,17 +33,6 @@ class HomeAdapter(private var books: List<BookItem>, private val itemClickListen
     }
 
 
-=======
-class HomeAdapter(private var books: List<BookItem>):  RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
-
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleTextView: TextView = itemView.findViewById(R.id.textView)
-        val imageView: ImageView = itemView.findViewById(R.id.imageView)
-    }
-
-
-
->>>>>>> 22bffd882a89048a4ebeca760d2104e6638c7b3a
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView =
             LayoutInflater.from(parent.context).inflate(R.layout.item_book, parent, false)

@@ -1,12 +1,8 @@
 <resources>
     <string name="app_name">UAS_</string>
-<<<<<<< HEAD
     <string name="pinjam_">PINJAM</string>
     <string name="gambar_11">gambar</string>
-    <string name="author_">Steve Martin</string>
-=======
 
->>>>>>> 22bffd882a89048a4ebeca760d2104e6638c7b3a
     <string name="nama_film1">Judul Buku</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="belum_punya_akun_daftar">Belum punya akun?</string>
@@ -67,5 +63,12 @@
     <string name="todo">TODO</string>
     <string name="description">The definitive, bestselling account of the company that changed the way we work and live, updated for the twentieth anniversary of Google’s founding with analysis of its most recent bold moves to redefine the world—and its even more ambitious plans for the future.</string>
     <string name="judul_buku_">Judul Buku</string>
-
+    <string name="search1">Search</string>
+    <string name="imagelogo">imagelogo</string>
+    <string name="masukkan_nama_buku1">Masukkan Nama Buku</string>
+    <string name="searchicon">searchicon</string>
+    <string name="tanya">Ensiklopedia Tanya Jawab</string>
+    <string name="author_">Steve Martin</string>
+    <string name="back_button_description">back_button</string>
+    <string name="result">Result</string>
 </resources>
