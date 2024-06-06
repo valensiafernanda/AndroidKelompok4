@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.pemrogandroid.uas_.EditProfileActivity
+import com.pemrogandroid.uas_.LoginActivity
 
 
 import com.pemrogandroid.uas_.databinding.FragmentProfilBinding
@@ -62,6 +63,13 @@ class ProfileFragment : Fragment() {
 
         binding.imageView5.setOnClickListener {
             val intent = Intent(activity, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.logoutButton.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(activity, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
         return root

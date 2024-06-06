@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -48,16 +49,15 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#D7E3ED"
             android:orientation="vertical"
             android:padding="28dp">
 
 
-
             <View
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
@@ -86,6 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:autofillHints=""
                 android:drawableEnd="@drawable/baseline_remove_red_eye_24"
                 android:ems="55"
                 android:hint="@string/password4"
@@ -94,27 +95,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.516"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-           <TextView
-               android:id="@+id/forgotpassword"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:gravity="right"
-               android:text="@string/forgot_password"
-               android:textSize="18sp"
-               tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:id="@+id/forgotpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/forgot_password"
+                    android:textSize="18sp"
+                    tools:ignore="RtlHardcoded" />
 
-       </RelativeLayout>
+            </RelativeLayout>
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
 
             <Button
                 android:id="@+id/masuk"
@@ -131,7 +131,7 @@
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
+                android:layout_height="13dp" />
 
             <TextView
                 android:id="@+id/orcontinue"
@@ -145,50 +145,55 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/imageView5"-->
-<!--                    android:layout_width="29dp"-->
-<!--                    android:layout_height="40dp"-->
-<!--                    android:contentDescription="@string/todo"-->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="29dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/google"
 
-<!--                    android:src="@drawable/pngegg__1_"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintHorizontal_bias="0.457"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.457"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"/>
+                android:layout_height="15dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tidakpunyaakun"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/belum_punya_akun_daftar2"
-                android:textSize="20sp"/>
-            <TextView
-                android:id="@+id/buttonregis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="@string/daftar12"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tidakpunyaakun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/belum_punya_akun_daftar2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/buttonregis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/daftar12"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"/>
-    </LinearLayout>
+                android:layout_height="30dp" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
