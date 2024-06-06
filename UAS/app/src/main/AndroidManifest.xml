@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UAS_"
+        android:theme="@style/Base.Theme.UAS_"
         tools:targetApi="31">
         <activity
             android:name=".SplashActivity"
@@ -24,14 +24,18 @@
         <activity
             android:name=".LoginActivity" />
         <activity
+            android:name=".PrivacyActivity" />
+        <activity
             android:name=".DaftarActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.UAS_"/>
         <activity android:name=".DetailActivity" />
         <activity android:name=".SearchResultActivity" />
         <activity android:name=".EditProfileActivity" />
+
     </application>
 
 </manifest>

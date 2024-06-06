@@ -3,6 +3,10 @@ package com.pemrogandroid.uas_
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -20,6 +24,9 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding: FragmentLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+    private lateinit var passwordEditText: EditText
+    private lateinit var passwordToggle: ImageView
+    private var isPasswordVisible: Boolean = false
 
     companion object {
         private const val RC_SIGN_IN = 9001
@@ -38,6 +45,15 @@ class LoginActivity : AppCompatActivity() {
             .build()
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
+
+
+        passwordEditText = findViewById(R.id.Password)
+        passwordToggle = findViewById(R.id.password_toggle)
+
+        passwordToggle.setOnClickListener {
+            togglePasswordVisibility()
+        }
+
         binding.masuk.setOnClickListener {
             val email = binding.editTextTextEmailAddress.text.toString()
             val password = binding.Password.text.toString()
@@ -106,4 +122,16 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
     }
-}
+
+    private fun togglePasswordVisibility() {
+        if (isPasswordVisible) {
+            passwordEditText.transformationMethod = PasswordTransformationMethod.getInstance()
+            passwordToggle.setImageResource(R.drawable.baseline_remove_red_eye_24)
+        } else {
+            passwordEditText.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            passwordToggle.setImageResource(R.drawable.baseline_visibility_off_24)
+        }
+        isPasswordVisible = !isPasswordVisible
+        passwordEditText.setSelection(passwordEditText.text.length)
+    }
+    }

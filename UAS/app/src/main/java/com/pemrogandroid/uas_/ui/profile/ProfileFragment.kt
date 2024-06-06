@@ -14,8 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.pemrogandroid.uas_.EditProfileActivity
 import com.pemrogandroid.uas_.LoginActivity
-
-
+import com.pemrogandroid.uas_.PrivacyActivity
 import com.pemrogandroid.uas_.databinding.FragmentProfilBinding
 
 class ProfileFragment : Fragment() {
@@ -43,10 +42,7 @@ class ProfileFragment : Fragment() {
             binding.email.text = email
         }
 
-
-
         firestore = FirebaseFirestore.getInstance()
-
 
         user?.uid?.let { uid ->
             firestore.collection("users").document(uid).get().addOnSuccessListener { document ->
@@ -54,10 +50,10 @@ class ProfileFragment : Fragment() {
                     val username = document.getString("username")
                     binding.textView3.text = username
                 } else {
-
+                    Toast.makeText(requireContext(), "No profile data found", Toast.LENGTH_SHORT).show()
                 }
-            }.addOnFailureListener { exception ->
-
+            }.addOnFailureListener {
+                Toast.makeText(requireContext(), "Failed to load profile data", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -72,6 +68,12 @@ class ProfileFragment : Fragment() {
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
+
+        binding.privacybutton.setOnClickListener {
+            val intent = Intent(activity, PrivacyActivity::class.java)
+            startActivity(intent)
+        }
+
         return root
     }
 
@@ -85,6 +87,7 @@ class ProfileFragment : Fragment() {
         loadProfileData()
         loadProfileImage()
     }
+
     private fun loadProfileData() {
         val user = FirebaseAuth.getInstance().currentUser
         user?.uid?.let { uid ->
@@ -97,11 +100,12 @@ class ProfileFragment : Fragment() {
                 } else {
                     Toast.makeText(requireContext(), "No profile data found", Toast.LENGTH_SHORT).show()
                 }
-            }.addOnFailureListener { exception ->
+            }.addOnFailureListener {
                 Toast.makeText(requireContext(), "Failed to load profile data", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
     private fun loadProfileImage() {
         val user = FirebaseAuth.getInstance().currentUser
         user?.let {
@@ -111,10 +115,9 @@ class ProfileFragment : Fragment() {
                     if (document != null) {
                         val imageUrl = document.getString("imageUrl")
                         if (!imageUrl.isNullOrEmpty()) {
-
                             Glide.with(this)
                                 .load(imageUrl)
-                                .into(binding.imageView6) // ganti dengan ImageView Anda
+                                .into(binding.imageView6) // Replace with your ImageView ID
                         }
                     }
                 }
@@ -123,5 +126,4 @@ class ProfileFragment : Fragment() {
                 }
         }
     }
-
 }

@@ -38,144 +38,171 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
-    <androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:cardCornerRadius="42dp"
+    android:layout_marginBottom="-20dp"
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:cardCornerRadius="42dp"
-        android:layout_marginBottom="-20dp"
-        >
+        android:background="#D7E3ED"
+        android:orientation="vertical"
+        android:padding="28dp">
 
-        <LinearLayout
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="55"
+            android:hint="@string/full_name"
+            android:inputType="text"
+            android:textColorHint="#607D8B"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="55"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#607D8B"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#D7E3ED"
-            android:orientation="vertical"
-            android:padding="28dp">
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
-
-            <EditText
-                android:id="@+id/editTextText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="55"
-                android:hint="@string/full_name"
-                android:inputType="text"
-                android:textColorHint="#607D8B"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:autofillHints="" />
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"/>
-
-            <EditText
-                android:id="@+id/editTextTextEmailAddress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="55"
-                android:hint="@string/enter_email"
-                android:inputType="textEmailAddress"
-                android:textColorHint="#607D8B"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"/>
-
+            android:layout_marginBottom="20dp">
 
             <EditText
                 android:id="@+id/PasswordMasuk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-44dp"
+                android:layout_toStartOf="@+id/password_toggle"
+                android:autofillHints=""
+                android:textColorHint="#607D8B"
+                android:hint="@string/password4"
+                android:inputType="textPassword"
+                android:paddingEnd="40dp"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/password_toggle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
-                android:textSize="25sp"
-                android:ems="55"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.516"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-                android:autofillHints="" />
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"/>
+                android:src="@drawable/baseline_remove_red_eye_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
 
             <EditText
                 android:id="@+id/ConfirmPassword"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="55"
+                android:layout_marginEnd="-44dp"
+                android:layout_toStartOf="@+id/password_toggle1"
+                android:autofillHints=""
+                android:textColorHint="#607D8B"
                 android:hint="@string/confirm_password"
-                android:textSize="25sp"
                 android:inputType="textPassword"
-                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.516"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:autofillHints="" />
+                android:paddingEnd="40dp"
+                android:textSize="25sp" />
 
-            <View
+            <ImageView
+                android:id="@+id/password_toggle1"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
-
-
-            <Button
-                android:id="@+id/daftar"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:backgroundTint="#6E8EB7"
-                android:text="@string/halamandaftar"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.805"
-                tools:ignore="DuplicateSpeakableTextCheck" />
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:src="@drawable/baseline_remove_red_eye_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/sudahpunyaakun11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sudah_punya_akun"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:id="@+id/masuk1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/masuk_3"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-            </LinearLayout>
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"/>
-        </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#6E8EB7"
+            android:text="@string/halamandaftar"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.805"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/sudahpunyaakun11"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/sudah_punya_akun"
+               android:textSize="20sp"/>
+           <TextView
+               android:id="@+id/masuk1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="5dp"
+               android:text="@string/masuk_3"
+               android:textStyle="bold"
+               android:textSize="20sp"/>
+       </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
 
 </RelativeLayout>

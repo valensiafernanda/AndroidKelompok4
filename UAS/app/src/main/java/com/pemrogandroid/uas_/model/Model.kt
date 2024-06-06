@@ -26,6 +26,7 @@ data class ImageLinks(
     @SerializedName("thumbnail") val thumbnail: String
 )
 
+
 data class Book(
     val id: String = "",
     val title: String = "",
@@ -34,6 +35,7 @@ data class Book(
     var availableQuantity: Int = 0,
     val imageUrl: String = ""
 )
+
 
 data class UserBook(
     val bookId: String = "",

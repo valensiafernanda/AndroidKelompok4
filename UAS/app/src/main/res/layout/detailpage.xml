@@ -71,7 +71,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
+    <!-- Description text -->
 
     <TextView
         android:id="@+id/judulBuku_"

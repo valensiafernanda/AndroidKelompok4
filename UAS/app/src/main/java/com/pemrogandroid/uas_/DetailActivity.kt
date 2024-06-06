@@ -100,7 +100,7 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun updateUIFromDatabase(book: Book) {
-        if (!isDestroyed) {
+        if (!isDestroyed) { // Memeriksa apakah aktivitas masih aktif
             judulBuku.text = book.title
             author.text = book.author
             description.text = book.description
@@ -202,12 +202,12 @@ class DetailActivity : AppCompatActivity() {
                             }
                         })
                     } else {
-
                         Toast.makeText(this@DetailActivity, "Coba lagi", Toast.LENGTH_SHORT).show()
                     }
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
+                    // Handle onCancelled
                     Log.e("FirebaseDatabase", "onCancelled: ${databaseError.message}")
                     Toast.makeText(this@DetailActivity, "Gagal memproses permintaan", Toast.LENGTH_SHORT).show()
                 }

@@ -39,7 +39,6 @@ class EditProfileActivity :AppCompatActivity() {
         storage = FirebaseStorage.getInstance()
 
         binding.Savebutton.setOnClickListener {
-            val newEmail = binding.editTextTextEmailAddress.text.toString()
             val newPassword = binding.PasswordMasuk.text.toString()
             val newUsername = binding.fullnameeditprofil.text.toString()
 
@@ -49,24 +48,6 @@ class EditProfileActivity :AppCompatActivity() {
 
                 val updateTasks = mutableListOf<Task<Void>>()
 
-                if (newEmail.isNotEmpty() && newEmail != user.email) {
-                    val emailUpdateTask = user.updateEmail(newEmail)
-                        .addOnCompleteListener { task ->
-                            if (task.isSuccessful) {
-                                firestore.collection("users").document(uid)
-                                    .update("email", newEmail)
-                                    .addOnSuccessListener {
-                                        Toast.makeText(this, "Email updated", Toast.LENGTH_SHORT).show()
-                                    }
-                                    .addOnFailureListener {
-                                        Toast.makeText(this, "Failed to update email in Firestore", Toast.LENGTH_SHORT).show()
-                                    }
-                            } else {
-                                Toast.makeText(this, "Failed to update email in Firebase Auth", Toast.LENGTH_SHORT).show()
-                            }
-                        }
-                    updateTasks.add(emailUpdateTask)
-                }
 
                 if (newPassword.isNotEmpty()) {
                     val passwordUpdateTask = user.updatePassword(newPassword)
@@ -119,6 +100,12 @@ class EditProfileActivity :AppCompatActivity() {
         findViewById<ImageView>(R.id.btn_back).setOnClickListener {
             finish()
         }
+
+
+        binding.cancelBtn.setOnClickListener {
+            finish()
+        }
+
     }
 
 
