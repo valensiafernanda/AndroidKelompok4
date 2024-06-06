@@ -71,7 +71,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <!-- Description text -->
+
 
     <TextView
         android:id="@+id/judulBuku_"
@@ -103,6 +103,7 @@
         app:layout_constraintTop_toTopOf="@+id/judulBuku_" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="360dp"
         android:layout_height="187dp"
         app:layout_constraintBottom_toTopOf="@id/pinjambtn"
@@ -117,9 +118,9 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="@string/description"
+            android:textAlignment="center"
             android:textColor="#050505"
-            android:textSize="20sp"
-            android:textAlignment="center"/>
+            android:textSize="20sp" />
 
     </ScrollView>
 
@@ -127,16 +128,40 @@
         android:id="@+id/pinjambtn"
         android:layout_width="356dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#6E8EB7"
         android:text="@string/pinjam_"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.618"
 
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/jlhbuku_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/angka"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pinjambtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/jlhbukuyangada" />
+
+    <TextView
+        android:id="@+id/jlhbukuyangada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/jumlahbuku_"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pinjambtn"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

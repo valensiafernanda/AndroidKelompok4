@@ -65,7 +65,7 @@ class SearchResultActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                // Tangani kesalahan saat respons tidak berhasil
+
             }
         }
     }}

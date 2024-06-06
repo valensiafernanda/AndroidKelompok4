@@ -25,3 +25,22 @@ data class VolumeInfo(
 data class ImageLinks(
     @SerializedName("thumbnail") val thumbnail: String
 )
+
+data class Book(
+    val id: String = "",
+    val title: String = "",
+    val author: String = "",
+    val description: String = "",
+    var availableQuantity: Int = 0,
+    val imageUrl: String = ""
+)
+
+data class UserBook(
+    val bookId: String = "",
+    val title: String = "",
+    val imageUrl: String = "",
+    var jumlahBuku: Int = 0,
+    val borrowedAt: Long = 0,
+    val returnAt: Long = 0,
+    val isConfirmed: Boolean =true,
+)
